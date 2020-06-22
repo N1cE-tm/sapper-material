@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+body,
+#sapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.drawer-container {
+  flex-grow: 1;
+  height: 0;
+  display: flex;
+}
+
+.app-content {
+  flex: auto;
+  position: relative;
+  width: 0;
+  flex-grow: 1;
+}
+
+.main-content {
+  overflow: auto;
+  display: flex;
+  height: 100%;
+}
+
+.main-content section {
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mdc-top-app-bar.dpg {
+  z-index: 7;
+}
